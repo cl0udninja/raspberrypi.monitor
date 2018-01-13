@@ -29,7 +29,7 @@ public class RaspberryPiStatusService {
     systemInfo.setModelName(SystemInfo.getModelName());
     systemInfo.setBoardType(SystemInfo.getBoardType());
     systemInfo.setTotalMemory(SystemInfo.getMemoryTotal());
-    systemInfo.setUserMemory(SystemInfo.getMemoryUsed());
+    systemInfo.setUsedMemory(SystemInfo.getMemoryUsed());
     systemInfo.setFreeMemory(SystemInfo.getMemoryFree());
     systemInfo.setSharedMemory(SystemInfo.getMemoryShared());
     systemInfo.setJavaVersion(SystemInfo.getJavaVersion());

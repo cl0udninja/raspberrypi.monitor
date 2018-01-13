@@ -43,7 +43,7 @@ Would yield something like this:
 "modelName": "ARMv7 Processor rev 4 (v7l)",
 "boardType": "RaspberryPi_3B",
 "totalMemory": 967700480,
-"userMemory": 221253632,
+"usedMemory": 221253632,
 "freeMemory": 401907712,
 "sharedMemory": 14475264,
 "javaVersion": "1.8.0_152",

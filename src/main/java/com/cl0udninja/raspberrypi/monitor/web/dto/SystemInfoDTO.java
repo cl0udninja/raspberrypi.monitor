@@ -29,7 +29,7 @@ public class SystemInfoDTO {
   @JsonProperty
   private Long totalMemory;
   @JsonProperty
-  private Long userMemory;
+  private Long usedMemory;
   @JsonProperty
   private Long freeMemory;
   @JsonProperty
