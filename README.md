@@ -14,3 +14,44 @@ Simply
 ```bash
 mvn clean install
 ```
+
+# Install on Pi to Start at Boot Up
+
+```bash
+sudo nano /etc/rc.local
+```
+
+Then add the below line above the last one (that exits)
+
+```bash
+java -jar /path/to/jar/raspberrypi.monitor.jar &
+```
+
+# Usage
+
+```
+http://raspberrypi:8080/api/pi
+```
+
+Would yield something like this:
+
+```json
+{
+"cpuTemperature": 52.1,
+"serialNumber": "00000000aa18b5b2",
+"cpuCoreVoltage": 1.2,
+"modelName": "ARMv7 Processor rev 4 (v7l)",
+"boardType": "RaspberryPi_3B",
+"totalMemory": 967700480,
+"userMemory": 221253632,
+"freeMemory": 401907712,
+"sharedMemory": 14475264,
+"javaVersion": "1.8.0_152",
+"hostname": "raspberrypi",
+"ipAddresses": [
+"192.168.1.40",
+"172.17.0.1"
+],
+"cpuFrequency": 600000000
+}
+```
