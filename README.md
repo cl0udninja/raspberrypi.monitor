@@ -38,7 +38,7 @@ Would yield something like this:
 ```json
 {
 "cpuTemperature": 52.1,
-"serialNumber": "00000000aa18b5b2",
+"serialNumber": "0000000000000000",
 "cpuCoreVoltage": 1.2,
 "modelName": "ARMv7 Processor rev 4 (v7l)",
 "boardType": "RaspberryPi_3B",
