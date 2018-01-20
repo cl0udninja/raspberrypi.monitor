@@ -17,6 +17,8 @@ mvn clean install
 
 # Install on Pi to Start at Boot Up
 
+Change the `src/main/resource/application.properties` file and set the IP address or hostname of the Pi for the variable `upnp.config.address`. You can also pass this information with the `-Dupnp.config.address=<myipaddress>` parameter at startup
+
 ```bash
 sudo nano /etc/rc.local
 ```

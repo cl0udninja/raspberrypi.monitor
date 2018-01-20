@@ -20,7 +20,7 @@ public class RaspberryPiStatusService {
   @SuppressWarnings("unchecked")
   public SystemInfoDTO compileStatusInformation()
       throws IOException, InterruptedException, UnsupportedOperationException, ParseException {
-    log.info("Querying system information");
+    log.debug("Querying system information");
     SystemInfoDTO systemInfo = new SystemInfoDTO();
 
     systemInfo.setCpuTemperature(SystemInfo.getCpuTemperature());
@@ -36,8 +36,9 @@ public class RaspberryPiStatusService {
     systemInfo.setHostname(NetworkInfo.getHostname());
     systemInfo.setIpAddresses(new HashSet<String>(CollectionUtils.<String>arrayToList(NetworkInfo.getIPAddresses())));
     systemInfo.setCpuFrequency(SystemInfo.getClockFrequencyArm());
+    systemInfo.setCpuPart(SystemInfo.getCpuPart());
 
-    log.info(String.format("System information: %s", systemInfo));
+    log.debug(String.format("System information: %s", systemInfo));
     return systemInfo;
   }
 

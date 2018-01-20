@@ -42,6 +42,8 @@ public class SystemInfoDTO {
   private Set<String> ipAddresses;
   @JsonProperty
   private Long cpuFrequency;
+  @JsonProperty
+  private String cpuPart;
 
   public static class BoardTypeSerializer extends JsonSerializer<BoardType> {
 
